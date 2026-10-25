@@ -69,19 +69,26 @@ footer{text-align:center;margin-top:36px;font-size:12.5px;color:var(--muted)}
   .page{padding:0;max-width:100%}
   section{break-inside:avoid}
 }
+
+/* language modes */
+body.mode-en .zh{display:none}
+body.mode-en .en,body.mode-en .en-li,body.mode-en .org-en,body.mode-en .h-en,body.mode-en .en-tag{display:revert}
+body.mode-zh .en,body.mode-zh .en-li,body.mode-zh .org-en,body.mode-zh .h-en,body.mode-zh .en-tag{display:none}
+body.mode-en .hero .en-name{display:inline}
+body.mode-zh .hero .en-name{display:none}
 </style>
 </head>
-<body>
+<body class="mode-both">
 <div class="page">
 
 <header class="hero">
   <h1>吴苏煌 <span class="en-name">Suhuang Wu</span></h1>
-  <div class="role">研发工程师 · 大语言模型方向 <span style="opacity:.6">|</span> R&amp;D Engineer · Large Language Models</div>
+  <div class="role"><span class="zh">研发工程师 · 大语言模型方向</span><span class="en" style="display:none">R&amp;D Engineer · Large Language Models</span></div>
   <div class="contact">
     <span>📞 188-6001-6223</span>
     <span>✉️ 1056949259@qq.com</span>
-    <span>📍 厦门 · Xiamen, Fujian</span>
-    <span>🎓 厦门大学硕士 · M.S., Xiamen University</span>
+    <span>📍 <span class="zh">厦门</span><span class="en" style="display:none">Xiamen, Fujian</span></span>
+    <span>🎓 <span class="zh">厦门大学硕士</span><span class="en" style="display:none">M.S., Xiamen University</span></span>
   </div>
 </header>
 
@@ -94,124 +101,123 @@ footer{text-align:center;margin-top:36px;font-size:12.5px;color:var(--muted)}
 <div class="card">
 
 <section id="work">
-  <h2>工作经历 <span class="h-en">Work Experience</span></h2>
+  <h2><span class="zh">工作经历</span><span class="en" style="display:none;font-weight:500;color:var(--primary-dark)">Work Experience</span></h2>
   <div class="item">
     <div class="item-head">
-      <div class="item-title">厦门市人工智能创新中心<span class="org-en">Xiamen AI Innovation Center</span></div>
-      <div class="item-date">2026.10 – 至今 Present</div>
+      <div class="item-title"><span class="zh">厦门市人工智能创新中心</span><span class="org-en" style="display:none">Xiamen AI Innovation Center</span></div>
+      <div class="item-date">2026.10 – <span class="zh">至今</span><span class="en" style="display:none">Present</span></div>
     </div>
-    <div class="item-sub">研发工程师 R&amp;D Engineer</div>
+    <div class="item-sub"><span class="zh">研发工程师</span><span class="en" style="display:none">R&amp;D Engineer</span></div>
     <ul>
-      <li>从事大语言模型方向的研发工作，参与模型训练、优化与业务落地。
+      <li><span class="zh">从事大语言模型方向的研发工作，参与模型训练、优化与业务落地。</span>
         <span class="en-li">R&amp;D on large language models, covering model training, optimization and real-world applications.</span></li>
     </ul>
   </div>
 </section>
 
 <section id="edu">
-  <h2>教育背景 <span class="h-en">Education</span></h2>
+  <h2><span class="zh">教育背景</span><span class="en" style="display:none;font-weight:500;color:var(--primary-dark)">Education</span></h2>
   <div class="item">
     <div class="item-head">
-      <div class="item-title">厦门大学<span class="org-en">Xiamen University</span></div>
+      <div class="item-title"><span class="zh">厦门大学</span><span class="org-en" style="display:none">Xiamen University</span></div>
       <div class="item-date">2022 – 2025</div>
     </div>
-    <div class="item-sub">硕士 · 计算机科学与技术（专业排名 18/66）</div>
-    <div class="en">M.S. in Computer Science and Technology (Ranked 18/66)</div>
+    <div class="item-sub"><span class="zh">硕士 · 计算机科学与技术（专业排名 18/66）</span><span class="en" style="display:none;color:var(--accent)">M.S. in Computer Science and Technology (Ranked 18/66)</span></div>
   </div>
   <div class="item">
     <div class="item-head">
-      <div class="item-title">厦门大学<span class="org-en">Xiamen University</span></div>
+      <div class="item-title"><span class="zh">厦门大学</span><span class="org-en" style="display:none">Xiamen University</span></div>
       <div class="item-date">2018 – 2022</div>
     </div>
-    <div class="item-sub">学士 · 智能科学与技术（专业排名 10/49，保研）</div>
-    <div class="en">B.Eng. in Intelligent Science and Technology (Ranked 10/49, recommended for postgraduate admission)</div>
+    <div class="item-sub"><span class="zh">学士 · 智能科学与技术（专业排名 10/49，保研）</span><span class="en" style="display:none;color:var(--accent)">B.Eng. in Intelligent Science and Technology (Ranked 10/49, recommended for postgraduate admission)</span></div>
   </div>
   <div class="item">
-    <div class="item-head"><div class="item-title">研究方向</div></div>
-    <div class="item-sub">大语言模型攻击与防御</div>
-    <div class="en">Research Focus: LLM Security — Attack &amp; Defense</div>
+    <div class="item-head">
+      <div class="item-title"><span class="zh">研究方向</span><span class="org-en" style="display:none">Research Focus</span></div>
+    </div>
+    <div class="item-sub"><span class="zh">大语言模型攻击与防御</span><span class="en" style="display:none;color:var(--accent)">LLM Security — Attack &amp; Defense</span></div>
   </div>
 </section>
 
 <section id="intern">
-  <h2>实习经历 <span class="h-en">Internship Experience</span></h2>
+  <h2><span class="zh">实习经历</span><span class="en" style="display:none;font-weight:500;color:var(--primary-dark)">Internship Experience</span></h2>
   <div class="item">
     <div class="item-head">
-      <div class="item-title">腾讯（深圳）<span class="org-en">Tencent, Shenzhen</span></div>
+      <div class="item-title"><span class="zh">腾讯（深圳）</span><span class="org-en" style="display:none">Tencent, Shenzhen</span></div>
       <div class="item-date">2024.3 – 2024.9</div>
     </div>
-    <div class="item-sub">大语言模型安全性研究 · 第一作者 LLM Security Research · First Author</div>
+    <div class="item-sub"><span class="zh">大语言模型安全性研究 · 第一作者</span><span class="en" style="display:none;color:var(--accent)">LLM Security Research · First Author</span></div>
     <ul>
-      <li>调研大语言模型安全性，针对提示词攻击开展优化研究；基于蒙特卡洛树搜索设计更高效的攻击策略，改进奖励函数以精准引导攻击方向，显著提高攻击成功率并减少攻击所需轮数。
+      <li><span class="zh">调研大语言模型安全性，针对提示词攻击开展优化研究；基于蒙特卡洛树搜索设计更高效的攻击策略，改进奖励函数以精准引导攻击方向，显著提高攻击成功率并减少攻击所需轮数。</span>
         <span class="en-li">Investigated LLM safety and prompt-injection attacks. Designed more effective attack strategies based on Monte Carlo Tree Search with an improved reward function, substantially increasing attack success rate while reducing the number of attack rounds.</span></li>
-      <li>成果：论文被 COLING 2025 录用（CCF-B，第一作者）。
+      <li><span class="zh">成果：论文被 COLING 2025 录用（CCF-B，第一作者）。</span>
         <span class="en-li">Outcome: paper accepted by COLING 2025 (CCF-B, first author).</span></li>
     </ul>
   </div>
   <div class="item">
     <div class="item-head">
-      <div class="item-title">小红书（北京）<span class="org-en">Xiaohongshu (RED), Beijing</span></div>
+      <div class="item-title"><span class="zh">小红书（北京）</span><span class="org-en" style="display:none">Xiaohongshu (RED), Beijing</span></div>
       <div class="item-date">2024.12 – 2025.2</div>
     </div>
-    <div class="item-sub">大模型蓝军样本生成 · 第一负责人 Red-teaming Sample Generation · Project Lead</div>
+    <div class="item-sub"><span class="zh">大模型蓝军样本生成 · 第一负责人</span><span class="en" style="display:none;color:var(--accent)">Red-teaming Sample Generation · Project Lead</span></div>
     <ul>
-      <li>分析高风险帖子与评论的文本特征及归因模式，研究现有防控系统的检测机制。
+      <li><span class="zh">分析高风险帖子与评论的文本特征及归因模式，研究现有防控系统的检测机制。</span>
         <span class="en-li">Analyzed textual features and attribution patterns of high-risk posts/comments and studied the detection mechanisms of existing moderation systems.</span></li>
-      <li>设计同义替换、语法重构、语气转换等文本变异规则，利用大语言模型自动生成多样化蓝军变异样本，提升防控系统的鲁棒性与泛化能力。
+      <li><span class="zh">设计同义替换、语法重构、语气转换等文本变异规则，利用大语言模型自动生成多样化蓝军变异样本，提升防控系统的鲁棒性与泛化能力。</span>
         <span class="en-li">Designed text-mutation rules (paraphrasing, syntactic restructuring, tone shifting) and leveraged LLMs to automatically generate diverse red-team variants, improving the robustness and generalization of moderation systems.</span></li>
     </ul>
   </div>
 </section>
 
 <section id="proj">
-  <h2>项目经历 <span class="h-en">Projects</span></h2>
+  <h2><span class="zh">项目经历</span><span class="en" style="display:none;font-weight:500;color:var(--primary-dark)">Projects</span></h2>
   <div class="item">
     <div class="item-head">
-      <div class="item-title">基于大语言模型的 HTML 网页生成<span class="org-en">LLM-based HTML Webpage Generation</span></div>
+      <div class="item-title"><span class="zh">基于大语言模型的 HTML 网页生成</span><span class="org-en" style="display:none">LLM-based HTML Webpage Generation</span></div>
       <div class="item-date">2023.9 – 2023.12</div>
     </div>
-    <div class="item-sub">项目负责人 Project Lead</div>
+    <div class="item-sub"><span class="zh">项目负责人</span><span class="en" style="display:none;color:var(--accent)">Project Lead</span></div>
     <ul>
-      <li>爬取近 4000 个网页，利用多模态大模型 LLaVA 自动生成描述，构建 15,000 条「网页描述 – HTML 代码」数据集。
+      <li><span class="zh">爬取近 4000 个网页，利用多模态大模型 LLaVA 自动生成描述，构建 15,000 条「网页描述 – HTML 代码」数据集。</span>
         <span class="en-li">Crawled ~4,000 webpages and used the multimodal model LLaVA to generate descriptions, building a dataset of 15,000 description–HTML pairs.</span></li>
-      <li>采用 LongLoRA 长文本微调技术，突破 Llama 2 在 4K 语料上无法扩展至 16K 上下文的限制，实现高效网页生成并完成功能演示。
+      <li><span class="zh">采用 LongLoRA 长文本微调技术，突破 Llama 2 在 4K 语料上无法扩展至 16K 上下文的限制，实现高效网页生成并完成功能演示。</span>
         <span class="en-li">Applied LongLoRA long-context fine-tuning to extend Llama 2 beyond its 4K training corpus to 16K context, enabling efficient webpage generation with a working demo.</span></li>
     </ul>
   </div>
 </section>
 
 <section id="awards">
-  <h2>荣誉奖项 <span class="h-en">Honors &amp; Awards</span></h2>
+  <h2><span class="zh">荣誉奖项</span><span class="en" style="display:none;font-weight:500;color:var(--primary-dark)">Honors &amp; Awards</span></h2>
   <div class="item">
     <ul>
-      <li>美国大学生数学建模竞赛（MCM/ICM）M 奖 · 全球前 6.69%（2020）
+      <li><span class="zh">美国大学生数学建模竞赛（MCM/ICM）M 奖 · 全球前 6.69%（2020）</span>
         <span class="en-li">Honorable Mention, Mathematical Contest in Modeling (MCM/ICM) · Top 6.69% worldwide (2020)</span></li>
-      <li>全国大学生数学建模竞赛福建省二等奖（2020）
+      <li><span class="zh">全国大学生数学建模竞赛福建省二等奖（2020）</span>
         <span class="en-li">Second Prize, CUMCM Fujian Division (2020)</span></li>
-      <li>国家励志奖学金 ×2（2018–2020）
+      <li><span class="zh">国家励志奖学金 ×2（2018–2020）</span>
         <span class="en-li">National Encouragement Scholarship ×2 (2018–2020)</span></li>
-      <li>厦门大学三好学生（2020）· 优秀共青团员（2020）
+      <li><span class="zh">厦门大学三好学生（2020）· 优秀共青团员（2020）</span>
         <span class="en-li">Merit Student &amp; Outstanding League Member, XMU (2020)</span></li>
-      <li>厦门大学"互联网+"大学生创新创业大赛银奖（2020）
+      <li><span class="zh">厦门大学"互联网+"大学生创新创业大赛银奖（2020）</span>
         <span class="en-li">Silver Award, XMU "Internet+" Innovation &amp; Entrepreneurship Competition (2020)</span></li>
     </ul>
   </div>
 </section>
 
 <section id="skills">
-  <h2>技能与其他 <span class="h-en">Skills &amp; More</span></h2>
+  <h2><span class="zh">技能与其他</span><span class="en" style="display:none;font-weight:500;color:var(--primary-dark)">Skills &amp; More</span></h2>
   <div class="item">
     <div class="tags">
       <span class="tag">Python</span>
       <span class="tag">C++</span>
-      <span class="tag">大语言模型 LLM</span>
-      <span class="tag">CET-6 英语 <span class="en-tag">English</span></span>
-      <span class="tag">论文/专利撰写 <span class="en-tag">Academic Writing</span></span>
+      <span class="tag"><span class="zh">大语言模型</span><span class="en-tag" style="display:none">LLM</span></span>
+      <span class="tag"><span class="zh">英语 CET-6</span><span class="en-tag" style="display:none">English (CET-6)</span></span>
+      <span class="tag"><span class="zh">论文/专利撰写</span><span class="en-tag" style="display:none">Academic Writing</span></span>
     </div>
     <ul>
-      <li>学生工作：2022 级人工智能系团支书、信息学院足球队主力、2018 级学习委员。
+      <li><span class="zh">学生工作：2022 级人工智能系团支书、信息学院足球队主力、2018 级学习委员。</span>
         <span class="en-li">Leadership: League branch secretary (AI class of 2022), main player of the School of Information football team, study monitor (class of 2018).</span></li>
-      <li>兴趣爱好：足球、篮球——厦门大学五人制足球冠军、十一人制足球亚军。
+      <li><span class="zh">兴趣爱好：足球、篮球——厦门大学五人制足球冠军、十一人制足球亚军。</span>
         <span class="en-li">Interests: football &amp; basketball — XMU 5-a-side champion, 11-a-side runner-up.</span></li>
     </ul>
   </div>
@@ -226,12 +232,8 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const btns = document.querySelectorAll('.lang-btn');
 function setMode(mode){
   btns.forEach(b=>b.classList.toggle('active', b.dataset.mode===mode));
-  document.querySelectorAll('.en, .en-li').forEach(el=>{
-    el.style.display = mode==='zh' ? 'none' : '';
-  });
-  document.querySelectorAll('.org-en,.h-en,.en-tag').forEach(el=>{
-    el.style.display = mode==='zh' ? 'none' : '';
-  });
+  document.body.classList.remove('mode-both','mode-zh','mode-en');
+  document.body.classList.add('mode-'+mode);
   document.body.lang = mode==='en' ? 'en' : 'zh-CN';
 }
 btns.forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.mode)));
