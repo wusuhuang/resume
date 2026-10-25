@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>吴苏煌 Suhuang Wu · 个人简历 Resume</title>
+<meta name="description" content="吴苏煌（Suhuang Wu）- 研发工程师，大语言模型方向。厦门大学硕士。R&D Engineer specializing in LLM.">
+<style>
+:root{
+  --primary:#185FA5; --primary-dark:#0C447C; --accent:#0F6E56;
+  --text:#1f2937; --muted:#6b7280; --light:#f4f6f9; --border:#e2e8f0;
+  --en-color:#8a94a3;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;color:var(--text);background:var(--light);line-height:1.65}
+.page{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+.card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:36px 44px;box-shadow:0 1px 3px rgba(15,30,60,.05)}
+
+/* header */
+.hero{background:linear-gradient(135deg,var(--primary-dark),var(--primary));color:#fff;border-radius:14px;padding:44px 44px 36px;position:relative}
+.hero h1{font-size:30px;font-weight:600;letter-spacing:1px}
+.hero .en-name{font-size:17px;opacity:.85;font-weight:400;margin-top:2px}
+.hero .role{margin-top:10px;font-size:15px;opacity:.92}
+.hero .contact{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13.5px;opacity:.9}
+.hero .contact span{white-space:nowrap}
+
+/* lang toggle */
+.lang-bar{position:sticky;top:0;z-index:50;display:flex;justify-content:center;padding:10px 0;backdrop-filter:blur(6px)}
+.lang-bar .inner{display:flex;gap:6px;background:#fff;border:1px solid var(--border);border-radius:99px;padding:4px;box-shadow:0 1px 4px rgba(15,30,60,.08)}
+.lang-btn{border:none;background:transparent;padding:5px 16px;border-radius:99px;font-size:13px;cursor:pointer;color:var(--muted)}
+.lang-btn.active{background:var(--primary);color:#fff}
+
+/* sections */
+section{margin-top:34px}
+h2{font-size:17px;color:var(--primary-dark);display:flex;align-items:center;gap:10px;margin-bottom:16px;letter-spacing:.5px}
+h2::before{content:"";display:inline-block;width:4px;height:18px;background:var(--primary);border-radius:2px}
+h2 .h-en{font-size:12.5px;color:var(--en-color);font-weight:400;letter-spacing:0}
+
+.item{padding:14px 0;border-bottom:1px dashed var(--border)}
+.item:last-child{border-bottom:none}
+.item-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;align-items:baseline}
+.item-title{font-size:15.5px;font-weight:600}
+.item-title .org-en{font-size:13px;color:var(--en-color);font-weight:400;margin-left:8px}
+.item-date{font-size:13px;color:var(--muted);white-space:nowrap}
+.item-sub{font-size:13px;color:var(--accent);margin-top:2px}
+ul{margin:8px 0 0 18px}
+li{margin-top:5px;font-size:14px}
+.en{color:var(--en-color);font-size:13px;margin-top:3px}
+.en-li{color:var(--en-color);font-size:12.5px;display:block;margin-top:2px;list-style:none;margin-left:-18px}
+
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tag{background:var(--light);border:1px solid var(--border);border-radius:99px;padding:3px 14px;font-size:13px}
+.tag .en-tag{color:var(--en-color);font-size:12px}
+
+.simple-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px}
+@media (max-width:640px){
+  .card{padding:24px 20px}
+  .hero{padding:32px 24px 28px}
+  .simple-grid{grid-template-columns:1fr}
+}
+
+footer{text-align:center;margin-top:36px;font-size:12.5px;color:var(--muted)}
+
+@media print{
+  body{background:#fff}
+  .lang-bar{display:none}
+  .card,.hero{box-shadow:none;border:none}
+  .page{padding:0;max-width:100%}
+  section{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="hero">
+  <h1>吴苏煌 <span class="en-name">Suhuang Wu</span></h1>
+  <div class="role">研发工程师 · 大语言模型方向 <span style="opacity:.6">|</span> R&amp;D Engineer · Large Language Models</div>
+  <div class="contact">
+    <span>📞 188-6001-6223</span>
+    <span>✉️ 1056949259@qq.com</span>
+    <span>📍 厦门 · Xiamen, Fujian</span>
+    <span>🎓 厦门大学硕士 · M.S., Xiamen University</span>
+  </div>
+</header>
+
+<div class="lang-bar"><div class="inner">
+  <button class="lang-btn active" data-mode="both">中英对照</button>
+  <button class="lang-btn" data-mode="zh">中文</button>
+  <button class="lang-btn" data-mode="en">English</button>
+</div></div>
+
+<div class="card">
+
+<section id="work">
+  <h2>工作经历 <span class="h-en">Work Experience</span></h2>
+  <div class="item">
+    <div class="item-head">
+      <div class="item-title">厦门市人工智能创新中心<span class="org-en">Xiamen AI Innovation Center</span></div>
+      <div class="item-date">2026.10 – 至今 Present</div>
+    </div>
+    <div class="item-sub">研发工程师 R&amp;D Engineer</div>
+    <ul>
+      <li>从事大语言模型方向的研发工作，参与模型训练、优化与业务落地。
+        <span class="en-li">R&amp;D on large language models, covering model training, optimization and real-world applications.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="edu">
+  <h2>教育背景 <span class="h-en">Education</span></h2>
+  <div class="item">
+    <div class="item-head">
+      <div class="item-title">厦门大学<span class="org-en">Xiamen University</span></div>
+      <div class="item-date">2022 – 2025</div>
+    </div>
+    <div class="item-sub">硕士 · 计算机科学与技术（专业排名 18/66）</div>
+    <div class="en">M.S. in Computer Science and Technology (Ranked 18/66)</div>
+  </div>
+  <div class="item">
+    <div class="item-head">
+      <div class="item-title">厦门大学<span class="org-en">Xiamen University</span></div>
+      <div class="item-date">2018 – 2022</div>
+    </div>
+    <div class="item-sub">学士 · 智能科学与技术（专业排名 10/49，保研）</div>
+    <div class="en">B.Eng. in Intelligent Science and Technology (Ranked 10/49, recommended for postgraduate admission)</div>
+  </div>
+  <div class="item">
+    <div class="item-head"><div class="item-title">研究方向</div></div>
+    <div class="item-sub">大语言模型攻击与防御</div>
+    <div class="en">Research Focus: LLM Security — Attack &amp; Defense</div>
+  </div>
+</section>
+
+<section id="intern">
+  <h2>实习经历 <span class="h-en">Internship Experience</span></h2>
+  <div class="item">
+    <div class="item-head">
+      <div class="item-title">腾讯（深圳）<span class="org-en">Tencent, Shenzhen</span></div>
+      <div class="item-date">2024.3 – 2024.9</div>
+    </div>
+    <div class="item-sub">大语言模型安全性研究 · 第一作者 LLM Security Research · First Author</div>
+    <ul>
+      <li>调研大语言模型安全性，针对提示词攻击开展优化研究；基于蒙特卡洛树搜索设计更高效的攻击策略，改进奖励函数以精准引导攻击方向，显著提高攻击成功率并减少攻击所需轮数。
+        <span class="en-li">Investigated LLM safety and prompt-injection attacks. Designed more effective attack strategies based on Monte Carlo Tree Search with an improved reward function, substantially increasing attack success rate while reducing the number of attack rounds.</span></li>
+      <li>成果：论文被 COLING 2025 录用（CCF-B，第一作者）。
+        <span class="en-li">Outcome: paper accepted by COLING 2025 (CCF-B, first author).</span></li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="item-head">
+      <div class="item-title">小红书（北京）<span class="org-en">Xiaohongshu (RED), Beijing</span></div>
+      <div class="item-date">2024.12 – 2025.2</div>
+    </div>
+    <div class="item-sub">大模型蓝军样本生成 · 第一负责人 Red-teaming Sample Generation · Project Lead</div>
+    <ul>
+      <li>分析高风险帖子与评论的文本特征及归因模式，研究现有防控系统的检测机制。
+        <span class="en-li">Analyzed textual features and attribution patterns of high-risk posts/comments and studied the detection mechanisms of existing moderation systems.</span></li>
+      <li>设计同义替换、语法重构、语气转换等文本变异规则，利用大语言模型自动生成多样化蓝军变异样本，提升防控系统的鲁棒性与泛化能力。
+        <span class="en-li">Designed text-mutation rules (paraphrasing, syntactic restructuring, tone shifting) and leveraged LLMs to automatically generate diverse red-team variants, improving the robustness and generalization of moderation systems.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="proj">
+  <h2>项目经历 <span class="h-en">Projects</span></h2>
+  <div class="item">
+    <div class="item-head">
+      <div class="item-title">基于大语言模型的 HTML 网页生成<span class="org-en">LLM-based HTML Webpage Generation</span></div>
+      <div class="item-date">2023.9 – 2023.12</div>
+    </div>
+    <div class="item-sub">项目负责人 Project Lead</div>
+    <ul>
+      <li>爬取近 4000 个网页，利用多模态大模型 LLaVA 自动生成描述，构建 15,000 条「网页描述 – HTML 代码」数据集。
+        <span class="en-li">Crawled ~4,000 webpages and used the multimodal model LLaVA to generate descriptions, building a dataset of 15,000 description–HTML pairs.</span></li>
+      <li>采用 LongLoRA 长文本微调技术，突破 Llama 2 在 4K 语料上无法扩展至 16K 上下文的限制，实现高效网页生成并完成功能演示。
+        <span class="en-li">Applied LongLoRA long-context fine-tuning to extend Llama 2 beyond its 4K training corpus to 16K context, enabling efficient webpage generation with a working demo.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="awards">
+  <h2>荣誉奖项 <span class="h-en">Honors &amp; Awards</span></h2>
+  <div class="item">
+    <ul>
+      <li>美国大学生数学建模竞赛（MCM/ICM）M 奖 · 全球前 6.69%（2020）
+        <span class="en-li">Honorable Mention, Mathematical Contest in Modeling (MCM/ICM) · Top 6.69% worldwide (2020)</span></li>
+      <li>全国大学生数学建模竞赛福建省二等奖（2020）
+        <span class="en-li">Second Prize, CUMCM Fujian Division (2020)</span></li>
+      <li>国家励志奖学金 ×2（2018–2020）
+        <span class="en-li">National Encouragement Scholarship ×2 (2018–2020)</span></li>
+      <li>厦门大学三好学生（2020）· 优秀共青团员（2020）
+        <span class="en-li">Merit Student &amp; Outstanding League Member, XMU (2020)</span></li>
+      <li>厦门大学"互联网+"大学生创新创业大赛银奖（2020）
+        <span class="en-li">Silver Award, XMU "Internet+" Innovation &amp; Entrepreneurship Competition (2020)</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>技能与其他 <span class="h-en">Skills &amp; More</span></h2>
+  <div class="item">
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">C++</span>
+      <span class="tag">大语言模型 LLM</span>
+      <span class="tag">CET-6 英语 <span class="en-tag">English</span></span>
+      <span class="tag">论文/专利撰写 <span class="en-tag">Academic Writing</span></span>
+    </div>
+    <ul>
+      <li>学生工作：2022 级人工智能系团支书、信息学院足球队主力、2018 级学习委员。
+        <span class="en-li">Leadership: League branch secretary (AI class of 2022), main player of the School of Information football team, study monitor (class of 2018).</span></li>
+      <li>兴趣爱好：足球、篮球——厦门大学五人制足球冠军、十一人制足球亚军。
+        <span class="en-li">Interests: football &amp; basketball — XMU 5-a-side champion, 11-a-side runner-up.</span></li>
+    </ul>
+  </div>
+</section>
+
+</div>
+<footer>吴苏煌 · Suhuang Wu · Built with ❤ · <span id="year"></span></footer>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const btns = document.querySelectorAll('.lang-btn');
+function setMode(mode){
+  btns.forEach(b=>b.classList.toggle('active', b.dataset.mode===mode));
+  document.querySelectorAll('.en, .en-li').forEach(el=>{
+    el.style.display = mode==='zh' ? 'none' : '';
+  });
+  document.querySelectorAll('.org-en,.h-en,.en-tag').forEach(el=>{
+    el.style.display = mode==='zh' ? 'none' : '';
+  });
+  document.body.lang = mode==='en' ? 'en' : 'zh-CN';
+}
+btns.forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.mode)));
+</script>
+</body>
+</html>
